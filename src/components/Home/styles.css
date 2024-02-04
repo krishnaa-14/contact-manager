@@ -1,0 +1,11 @@
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
