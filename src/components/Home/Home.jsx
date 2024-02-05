@@ -63,12 +63,9 @@ const Home = () => {
             })
 
             if(response.ok) {
-                const data = await response.json();
-                console.log(data);
-                setContacts(prevContacts => [...prevContacts, data]);
+                setContacts(prevContacts => [...prevContacts, {name, email, mobile, id: uuidv4()}]);
                 setDialogOpen(false);
                 // window.location.reload();
-                
             }
             else {
                 console.error('Failed to add contact');
